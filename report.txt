@@ -1,0 +1,1 @@
+At each iteration we iteratively take processes, locking relevant files as we go. Removed file-processes are stored so we don't repeat processes. This guarantees we're at least as good as the sequential method, only being equally as slow with certain input types (small input, all files requesting one other file).
